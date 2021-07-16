@@ -1,0 +1,45 @@
+* {
+    background-color:lightgoldenrodyellow; 
+}
+
+body {
+    margin: 20 px;
+    text-align: left;
+
+}
+
+.left {
+    float: left;
+    padding: 0 10px 0 0;
+}
+
+h1 {
+    font-size: 3rem;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: green;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+ul {
+    list-style:disc;
+    margin: 1rem;
+    
+}
+
+h3 {
+    font-size: 22px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color:peru;
+    font-style: bold;
+}
+
+ul {
+    text-align: left;
+
+}
+
+
+
+
+
