@@ -8,6 +8,14 @@ body {
 
 }
 
+
+div {
+    border: 2px dashed forestgreen;
+    padding: 15px;
+    margin: 15px;
+    float: right;
+}
+
 .left {
     float: left;
     padding: 0 10px 0 0;
@@ -17,14 +25,26 @@ h1 {
     font-size: 3rem;
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     color: green;
+    background-color: white;
     margin-left:auto;
-    margin-right:auto;
+    margin-right: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
 }
 
 ul {
-    list-style:disc;
-    margin: 1rem;
+    list-style:circle;
+    margin: 10px;
+    margin-top: -1px;
     
+}
+
+ol {
+    list-style:numbers;
+    margin: 10px;
+    margin-top: -1px;
+    text-align: left;
+    padding: 10px;
+    margin-bottom: px;
 }
 
 h3 {
@@ -32,12 +52,22 @@ h3 {
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     color:peru;
     font-style: bold;
+    padding: 10px; 
+    display: inline-block;
+    margin-bottom: -150px;
+    margin-top: 10px;
 }
+
 
 ul {
     text-align: left;
+    padding: 10px;
+    margin-bottom: px;
+
 
 }
+
+
 
 
 
