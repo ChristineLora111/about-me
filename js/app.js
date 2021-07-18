@@ -86,10 +86,10 @@ let myFavoriteNumber = 5;
 let usersGuess = +prompt('What is my favorite number? Hint: Less than 10, greater than 2. You have 4 tries to guess!');
 
 let attemptsRemaining = 3;
-let attempts = 3;
+let attemptsMade = 3;
 
 while (attemptsRemaining) {
-    for (let i = 0; i < attempts; i++) {
+    for (let i = 0; i < attemptsMade; i++) {
         if (usersGuess === myFavoriteNumber) {
             attemptsRemaining = 0;
             alert(`You're correct!`);
@@ -142,10 +142,10 @@ while (attempts) {
         attempts = 0; 
         break; 
     }
-    alert(`Please try again, you have ${attempts} remaining`);
+    alert(`Please try again, you have ${attempts} attempts remaining`);
         userInput = prompt(`What's my favorite animal?`);
         attempts--;
 } 
 // Keep track of the total number of correct answers. At the end tell them how many they got correct out of the 7 questions asked.
 
-alert(`You scored ${score} out of 7 on my about me quiz!! YASSSS!`);
+alert(`You scored ${correctcount} out of 7 on my about me quiz!! YASSSS!`);
