@@ -95,7 +95,7 @@ while (attemptsRemaining) {
             alert(`You're correct!`);
             correctcount++;
             break;
-        }
+        } 
         else if (usersGuess < myFavoriteNumber) {
             alert(`That's too low, try again! You have ${attemptsRemaining} attempts remaining.`);
 
@@ -106,11 +106,11 @@ while (attemptsRemaining) {
             usersGuess = +prompt(`Please try another number`);
         }
         attemptsRemaining--;
-        if (attemptsRemaining === 0 && usersGuess !== myFavoriteNumber) {
-            alert('The correct answer is ' + myFavoriteNumber);
-        }
-    }
-}
+        if (attemptsRemaining === 0 && usersGuess !== myFavoriteNumber) { 
+            alert('The correct answer is ' + myFavoriteNumber); 
+        } 
+    } 
+} 
 
 // Add a 7th question that has multiple possible correct answers that are stored in an array.
 // Give the user 6 attempts to guess the correct answer.
@@ -133,11 +133,11 @@ while (attempts) {
         if (userInput === myFavoriteAnimals[i]) {
             alert(`You got it right!`);
             correctcount++;
-            guessedCorrectly = true;
-            break;
+            guessedCorrectly = true; 
+            break; 
         } 
     } 
-    if (guessedCorrectly) {
+    if (guessedCorrectly) { 
         correctcount++;
         attempts = 0; 
         break; 
@@ -148,4 +148,7 @@ while (attempts) {
 } 
 // Keep track of the total number of correct answers. At the end tell them how many they got correct out of the 7 questions asked.
 
+alert(`Your possible answers were ${myFavoriteAnimals}`);
 alert(`You scored ${correctcount} out of 7 on my about me quiz!! YASSSS!`);
+
+
