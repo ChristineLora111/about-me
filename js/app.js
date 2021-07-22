@@ -88,37 +88,37 @@ function questionFive() {
 // - Indicates through an alert if the guess is “too high” or “too low”.
 // - It should give the user exactly four opportunities to get the correct answer.
 // - After all attempts have been exhausted, tell the user the correct answer. Consider using a loop of some sort.
+function questionSix() {
+  // QUESTION 6:
+  let myFavoriteNumber = 5;
+  let usersGuess = +prompt('What is my favorite number? Hint: Less than 10, greater than 2. You have 4 tries to guess!');
 
-// QUESTION 6: 
-let myFavoriteNumber = 5;
-let usersGuess = +prompt('What is my favorite number? Hint: Less than 10, greater than 2. You have 4 tries to guess!');
+  let attemptsRemaining = 3;
+  let attemptsMade = 3;
 
-let attemptsRemaining = 3;
-let attemptsMade = 3;
-
-while (attemptsRemaining) {
+  while (attemptsRemaining) {
     for (let i = 0; i < attemptsMade; i++) {
-        if (usersGuess === myFavoriteNumber) {
-            attemptsRemaining = 0;
-            alert(`You're correct!`);
-            correctcount++;
-            break;
-        } 
-        else if (usersGuess < myFavoriteNumber) {
-            alert(`That's too low, try again! You have ${attemptsRemaining} attempts remaining.`);
-
-            usersGuess = +prompt('Can you guess again?');
-        }
-        else if (usersGuess > myFavoriteNumber) {
-            alert(`That's too high, guess again! You have ${attemptsRemaining} attempts remaining.`);
-            usersGuess = +prompt(`Please try another number`);
-        }
-        attemptsRemaining--;
-        if (attemptsRemaining === 0 && usersGuess !== myFavoriteNumber) { 
-            alert('The correct answer is ' + myFavoriteNumber); 
-        } 
-    } 
-} 
+      if (usersGuess === myFavoriteNumber) {
+        attemptsRemaining = 0;
+        alert('You\'re correct!');
+        correctcount++;
+        break;
+      }
+      else if (usersGuess < myFavoriteNumber) {
+        alert(`That's too low, try again! You have ${attemptsRemaining} attempts remaining.`);
+        usersGuess = +prompt('Can you guess again?');
+      }
+      else if (usersGuess > myFavoriteNumber) {
+        alert(`That's too high, guess again! You have ${attemptsRemaining} attempts remaining.`);
+        usersGuess = +prompt('Please try another number');
+      }
+      attemptsRemaining--;
+      if (attemptsRemaining === 0 && usersGuess !== myFavoriteNumber) {
+        alert('The correct answer is ' + myFavoriteNumber);
+      }
+    }
+  }
+}
 
 // Add a 7th question that has multiple possible correct answers that are stored in an array.
 // Give the user 6 attempts to guess the correct answer.
