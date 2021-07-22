@@ -127,33 +127,35 @@ function questionSix() {
 // Consider using a loop of some sort for this question.
 
 // QUESTION 7:
-let myFavoriteAnimals = ['cats', 'dogs', 'penguins', 'octopus'];
-let userInput = prompt('what is my favorite animal?');
-let attempts = 5;
-let guessedCorrectly = false;
+function questionSeven() {
+  let myFavoriteAnimals = ['cats', 'dogs', 'penguins', 'octopus'];
+  let userInput = prompt('what is my favorite animal?');
+  let attempts = 5;
+  let guessedCorrectly = false;
 
-while (attempts) {
+  while (attempts) {
     if (!attempts) {
-        alert(`You're out of attempts`);
-        break;
+      alert(`You're out of attempts`);
+      break;
     }
     for (let i = 0; i < myFavoriteAnimals.length; i++) {
-        if (userInput === myFavoriteAnimals[i]) {
-            alert(`You got it right!`);
-            correctcount++;
-            guessedCorrectly = true; 
-            break; 
-        } 
-    } 
-    if (guessedCorrectly) { 
+      if (userInput === myFavoriteAnimals[i]) {
+        alert(`You got it right!`);
         correctcount++;
-        attempts = 0; 
-        break; 
+        guessedCorrectly = true;
+        break;
+      }
+    }
+    if (guessedCorrectly) {
+      correctcount++;
+      attempts = 0;
+      break;
     }
     alert(`Please try again, you have ${attempts} attempts remaining`);
-        userInput = prompt(`What's my favorite animal?`);
-        attempts--;
-} 
+    userInput = prompt(`What's my favorite animal?`);
+    attempts--;
+  }
+}
 // Keep track of the total number of correct answers. At the end tell them how many they got correct out of the 7 questions asked.
 
 alert(`Your possible answers were ${myFavoriteAnimals}`);
