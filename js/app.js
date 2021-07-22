@@ -70,16 +70,18 @@ function questionFour() {
   }
 }
 
-// QUESTION 5:
-let petDogs = prompt('Do I try to pet every day I come across?');
+function questionFive() {
+  // QUESTION 5:
+  let petDogs = prompt('Do I try to pet every day I come across?');
 
-// console.log('users answer ' + petDogs);
+  // console.log('users answer ' + petDogs);
 
-if (petDogs === 'yes' || petDogs === 'y') {
+  if (petDogs === 'yes' || petDogs === 'y') {
     alert('Yep, I really do. You are correct');
     correctcount++;
-} else if (petDogs === 'no' || petDogs === 'n') {
+  } else if (petDogs === 'no' || petDogs === 'n') {
     alert('I\'m almost offended you would think no. Try again.')
+  }
 }
 
 // - Add a 6th question to the guessing game that takes in a numeric input by prompting the user to guess a number.
