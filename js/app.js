@@ -55,17 +55,19 @@ function questionThree() {
   }
 }
 
-// QUESTION 4:
-let plantMom = prompt('Am I a plant mom to 50+ house plants?');
+function questionFour() {
+  // QUESTION 4:
+  let plantMom = prompt('Am I a plant mom to 50+ house plants?');
 
-// console.log('user answer ' + plantMom);
+  // console.log('user answer ' + plantMom);
 
-// response to users answer:
-if (plantMom === 'yes' || plantMom === 'y') {
+  // response to users answer:
+  if (plantMom === 'yes' || plantMom === 'y') {
     alert('You already know! Thank you for being correct');
     correctcount++;
-} else if (plantMom === 'no' || plantMom === 'n') {
+  } else if (plantMom === 'no' || plantMom === 'n') {
     alert('Aw c\'mon, try again!')
+  }
 }
 
 // QUESTION 5:
