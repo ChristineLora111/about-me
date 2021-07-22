@@ -1,12 +1,12 @@
 # about-me
 
-# LAB - 02
+# LAB - 04
 
 ## About Me
 
 I'm building a website all about myself as I develop my skills in coding. I will tell you a bit about my personal interest. 
 
-### Author: Christine Lora
+### Authors: Christine Lora and Aaron Burke
 
 ### Links and Resources
 * [CSS Reset](https://meyerweb.com/eric/tools/css/reset/)
