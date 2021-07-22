@@ -7,19 +7,21 @@ let username = prompt('What\'s your name?');
 alert('Hello ' + username);
 
 // QUESTION 1:
+function questionOne() {
 // about my favorite food:
-let answer0ne = prompt('Do you think I like sushi? Yes or no').toLowerCase();
+  let answer0ne = prompt('Do you think I like sushi? Yes or no').toLowerCase();
 
-// console.log('user answer to question 1: ' + answer0ne);
+  // console.log('user answer to question 1: ' + answer0ne);
 
-// response to the users answer:
-if (answer0ne === 'yes' || answer0ne === 'y') {
+  // response to the users answer:
+  if (answer0ne === 'yes' || answer0ne === 'y') {
     alert('Yassss, you got that right! I LOVE sushi!');
     correctcount++;
-} else if (answer0ne === 'no' || answer0ne === 'n') {
+  } else if (answer0ne === 'no' || answer0ne === 'n') {
     alert('Sorry, you\'re incorrect');
-} else {
+  } else {
     alert('Answers need to be yes or no')
+  }
 }
 
 // QUESTION 2:
