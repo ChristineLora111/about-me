@@ -20,37 +20,39 @@ function questionOne() {
   } else if (answer0ne === 'no' || answer0ne === 'n') {
     alert('Sorry, you\'re incorrect');
   } else {
-    alert('Answers need to be yes or no')
+    alert('Answers need to be yes or no');
   }
 }
 
 // QUESTION 2:
-let areDogsCute = prompt('Are dogs cute? Pls answer with a yes or no');
+function questionTwo() {
+  let areDogsCute = prompt('Are dogs cute? Pls answer with a yes or no');
+  // console.log('user answer: ' + areDogsCute);
+  let dogsUpperCase = areDogsCute.toUpperCase();
 
-// console.log('user answer: ' + areDogsCute);
+  // console.log(dogsUpperCase);
 
-let dogsUpperCase = areDogsCute.toUpperCase();
-
-// console.log(dogsUpperCase);
-
-if (dogsUpperCase === 'YES' || dogsUpperCase === 'YAS') {
+  if (dogsUpperCase === 'YES' || dogsUpperCase === 'YAS') {
     alert('Heck yeah, dogs are cute!');
     correctcount++;
-} else if (dogsUpperCase === 'NO' || dogsUpperCase === 'n') {
-    alert('WOW, you couldn\'t be more wrong :(')
+  } else if (dogsUpperCase === 'NO' || dogsUpperCase === 'n') {
+    alert('WOW, you couldn\'t be more wrong :(');
+  }
 }
 
-// QUESTION 3:
-let doWorkOut = prompt('Do I enjoy working out? Yes or no');
+function questionThree() {
+  // QUESTION 3:
+  let doWorkOut = prompt('Do I enjoy working out? Yes or no');
 
-// console.log('users answer ' + doWorkOut);
+  // console.log('users answer ' + doWorkOut);
 
-// response to the users answer:
-if (doWorkOut === 'yes' || doWorkOut === 'y') {
+  // response to the users answer:
+  if (doWorkOut === 'yes' || doWorkOut === 'y') {
     alert('You are absolutely right. Wow, you already know so much about me :)');
     correctcount++;
-} else if (doWorkOut === 'no' || doWorkOut === 'n') {
+  } else if (doWorkOut === 'no' || doWorkOut === 'n') {
     alert('It\'s like you don\'t know me at all')
+  }
 }
 
 // QUESTION 4:
